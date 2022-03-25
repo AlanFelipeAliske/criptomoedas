@@ -8,5 +8,6 @@ namespace criptomoedas
 {
     internal class Corretora
     {
+
     }
 }
