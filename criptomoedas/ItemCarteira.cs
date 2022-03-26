@@ -14,16 +14,17 @@ namespace criptomoedas
         {
             Quantidade = quantidade;
         }
-        public ItemCarteira()
+        /*public ItemCarteira()
         {
-            Quantidade = 100;
-        }
+            Quantidade = quantidade;
+        }*/
         public void ObtemCotacaoMoeda()
         {
-
+            Quantidade = this.Quantidade + 1000;
         }
         public void ImprimeItemCarteira()
         {
+            ObtemCotacaoMoeda();
             Console.WriteLine("Quantidade: {0}", this.Quantidade);
         }
 

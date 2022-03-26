@@ -3,21 +3,19 @@
 
 using criptomoedas;
 
-Moeda brl = new Moeda();
-Cliente cli = new Cliente();
-ItemCarteira IteCart = new ItemCarteira();
+Carteira ccarteira = new Carteira("Endereco carteira");
+Cliente ccliente = new Cliente();
+Corretora ccorretora = new Corretora(4546, "corretoraX");
+ItemCarteira iitemcarteira = new ItemCarteira(10);
+Moeda mmoeda = new Moeda();
+ParMoeda pparmoeda = new ParMoeda(20);
 
-//Console.WriteLine("Olá mundo!");
-
-Console.WriteLine(brl.Codigo);
-Console.WriteLine(brl.Nome);
-
-
-brl.ImprimeMoeda("Codigo", "Alan");
-cli.ImprimeCliente();
-IteCart.ImprimeItemCarteira();
-
-//cli.ImprimeCliente("0", "alan", "alan@gmail", "995555555", "sd56v41s68g4135s1r3yhs3r84hs354");
+mmoeda.ImprimeMoeda("Codigo", "Alan");
+ccliente.ImprimeCliente();
+iitemcarteira.ImprimeItemCarteira();
+ccarteira.ImprimeCarteira();
+ccorretora.ImprimeCorretora();
+pparmoeda.ImprimeParMoeda();
 
 
-Console.WriteLine(brl.Nome);
+//Console.WriteLine(mmoeda.Nome);
