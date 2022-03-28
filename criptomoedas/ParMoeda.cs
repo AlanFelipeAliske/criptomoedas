@@ -8,15 +8,17 @@ namespace criptomoedas
 {
     internal class ParMoeda
     {
+        public Moeda moeda { get; set; }
         public double Valor { get; set; }
-
-        public ParMoeda (double valor)
+        public ParMoeda() { }
+        public ParMoeda (double valor, Moeda moeda)
         {
-            Valor = valor;
+            this.Valor = valor;
+            this.moeda = moeda;
         }
         public void ImprimeParMoeda()
         {
-            Console.WriteLine("Imprime par moeda {0}", this.Valor);
+            Console.WriteLine("Imprime moeda base:'{0}', e moeda cotacao:'{1}'", this.Valor, this.moeda);
         }
 
     }

@@ -16,7 +16,7 @@ namespace criptomoedas
 
         public Cliente(int codigo, string nome, string email, string celular, string passHash)
         {
-            this.Codigo = 0;
+            this.Codigo = codigo;
             this.Nome = nome;
             this.Email = email;
             this.Celular = celular;

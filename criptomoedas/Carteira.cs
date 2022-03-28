@@ -10,18 +10,21 @@ namespace criptomoedas
     {
         public string Endereco { get; set; }
 
+        public List<ItemCarteira> itemcarteira;
+
+        public Carteira() { }
         public Carteira(string endereco)
         {
-            Endereco = endereco;
+            this.Endereco = endereco;
+            this.itemcarteira = new List<ItemCarteira>();
         }
-
         public void InsereItemCarteira()
         {
 
         }
         public void ImprimeCarteira()
         {
-            Console.WriteLine("Imprime carteira {0}", this.Endereco);
+            Console.WriteLine("Endereco item carteira:{0}, Itens na carteira:{1}", this.Endereco, this.itemcarteira);
         }
         public void Deposita()
         {

@@ -10,11 +10,13 @@ namespace criptomoedas
     {
         public int CodigoCorretora { get; set; }
         public string NomeCorretora { get; set; }
-
+        public List<Carteira> Carteiras;
+        public Corretora() { }
         public Corretora(int codigoCorretora, string nomeCorretora)
         {
-            CodigoCorretora = codigoCorretora;
-            NomeCorretora = nomeCorretora;
+            this.CodigoCorretora = codigoCorretora;
+            this.NomeCorretora = nomeCorretora;
+            this.Carteiras = new List<Carteira>();
         }
         public void ImprimeCorretora()
         {

@@ -9,7 +9,7 @@ namespace criptomoedas
     internal class ItemCarteira
     {
         public double Quantidade { get; set; }
-    
+        public ItemCarteira() { }
         public ItemCarteira(double quantidade)
         {
             Quantidade = quantidade;

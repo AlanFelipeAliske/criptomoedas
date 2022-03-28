@@ -12,18 +12,12 @@ namespace criptomoedas
         public string Nome { get; set; }
         public Moeda(string codigo, string nome)
         {
-            Codigo = codigo;
-            Nome = nome;
+            this.Codigo = codigo;
+            this.Nome = nome;
         }
-        public Moeda()
+        public void ImprimeMoeda()
         {
-            Codigo = "teste";
-            Nome = "BRL";
-        }
-
-        public void ImprimeMoeda(string codigo, string nome)
-        {
-            Console.WriteLine("Impressão moeda {0}, {1}", this.Codigo, nome);
+            Console.WriteLine("Código da moeda:'{0}', Nome da moeda:'{1}'", this.Codigo, this.Nome);
         }
         
     }
