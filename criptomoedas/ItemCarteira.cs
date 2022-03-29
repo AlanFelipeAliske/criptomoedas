@@ -8,16 +8,13 @@ namespace criptomoedas
 {
     internal class ItemCarteira
     {
+        public Moeda moeda { get; set; }
         public double Quantidade { get; set; }
         public ItemCarteira() { }
         public ItemCarteira(double quantidade)
         {
             Quantidade = quantidade;
         }
-        /*public ItemCarteira()
-        {
-            Quantidade = quantidade;
-        }*/
         public void ObtemCotacaoMoeda()
         {
             Quantidade = this.Quantidade + 1000;
@@ -27,8 +24,5 @@ namespace criptomoedas
             ObtemCotacaoMoeda();
             Console.WriteLine("Quantidade: {0}", this.Quantidade);
         }
-
-    
     }
-
 }
